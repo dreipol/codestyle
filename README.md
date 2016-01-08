@@ -1,5 +1,9 @@
 # codestyle
 
+
 ### Android Studio
-- Spaces
-- Code Arrangement and field Prefixes
+android_studio.jar handles the following code styles
+- Spaces instead of tabs
+- Code Arrangement and field prefixes
+- XML Linebreaks
+
