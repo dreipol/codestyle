@@ -4,7 +4,6 @@
 - Open your IDE
 - Choose Menu File > Import Settings
 - Select the jar for your IDE
-- 
 
 ### PyCharm
 pycharm.jar
