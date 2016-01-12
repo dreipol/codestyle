@@ -25,6 +25,7 @@ android_studio.jar
 #### Formatting
 - Spaces instead of tabs
 - Code Arrangement and field prefixes
+- Method and Field arrangement
 - XML Linebreaks
 
 #### Macros
