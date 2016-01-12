@@ -1,4 +1,5 @@
 # codestyle
+This repo contains the code styles for all JetBrains based IDEs used at dreipol
 
 ## Import instructions
 - Open your IDE
