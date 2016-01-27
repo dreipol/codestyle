@@ -46,7 +46,7 @@ or you can change your global config to use the template folder from codestyle:
 ```
 git config --global init.templatedir '~/Documents/Repositories/codestyle/git-templates'
 ```
-New repositories will have the hooks automatically. For existing repositories, you have to `git init` in the repository to add the templates. Please not that you will have to do this again if the hook-script changes.
+New repositories will have the hooks automatically. For existing repositories, you have to `git init` in the repository to add the templates. Please note that you will have to do this again if the hook-script changes.
 
 
 
