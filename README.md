@@ -31,3 +31,14 @@ android_studio.jar
 #### Macros
 - reformat_and_save: Rearranges, reformats and organizes imports, then saves the file
 
+
+# commit hooks
+
+## prepare-commit-msg
+Prefixes your git commit message with the name of the current branch. You can link the script by executing the following commands
+```
+chmod a+x ~/Documents/Repositories/codestyle/prepare-commit-msg 
+mkdir ~/Documents/Repositories/[REPOSITORY]/.git/hooks
+ln -s  ~/Documents/Repositories/codestyle/prepare-commit-msg ~/Documents/Repositories/[REPOSITORY]/.git/hooks/prepare-commit-msg
+```
+
