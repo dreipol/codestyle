@@ -38,9 +38,16 @@ android_studio.jar
 Prefixes your git commit message with the name of the current branch. 
 You can link the script by executing the following commands:
 ```
-chmod a+x ~/Documents/Repositories/codestyle/prepare-commit-msg 
+chmod a+x ~/Documents/Repositories/codestyle/git-templates/hooks/prepare-commit-msg 
 mkdir ~/Documents/Repositories/[REPOSITORY]/.git/hooks
-ln -s  ~/Documents/Repositories/codestyle/prepare-commit-msg ~/Documents/Repositories/[REPOSITORY]/.git/hooks/prepare-commit-msg
+ln -s  ~/Documents/Repositories/codestyle/git-templates/hooks/prepare-commit-msg ~/Documents/Repositories/[REPOSITORY]/.git/hooks/prepare-commit-msg
 ```
-You have to link the hook into every project manually (at the moment) 
+or you can change your global config to use the template folder from codestyle:
+```
+git config --global init.templatedir '~/Documents/Repositories/codestyle/git-templates'
+```
+New repositories will have the hooks automatically. For existing repositories, you have to `git init` in the repository to add the templates. Please not that you will have to do this again if the hook-script changes.
+
+
+
 
