@@ -35,10 +35,12 @@ android_studio.jar
 # commit hooks
 
 ## prepare-commit-msg
-Prefixes your git commit message with the name of the current branch. You can link the script by executing the following commands
+Prefixes your git commit message with the name of the current branch. 
+You can link the script by executing the following commands:
 ```
 chmod a+x ~/Documents/Repositories/codestyle/prepare-commit-msg 
 mkdir ~/Documents/Repositories/[REPOSITORY]/.git/hooks
 ln -s  ~/Documents/Repositories/codestyle/prepare-commit-msg ~/Documents/Repositories/[REPOSITORY]/.git/hooks/prepare-commit-msg
 ```
+You have to link the hook into every project manually (at the moment) 
 
