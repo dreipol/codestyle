@@ -31,14 +31,24 @@ android_studio.jar
 #### Macros
 - reformat_and_save: Rearranges, reformats and organizes imports, then saves the file
 
+### AppCode
+appcode.jar
+
+#### Formatting
+- Spaces instead of tabs
+- Code Arrangement
+- Method and Field arrangement
+
+#### Macros
+- reformat_and_save: Reformats, indents and organizes imports, then saves the file
 
 # commit hooks
 
 ## prepare-commit-msg
-Prefixes your git commit message with the name of the current branch. 
+Prefixes your git commit message with the name of the current branch.
 You can link the script by executing the following commands:
 ```
-chmod a+x ~/Documents/Repositories/codestyle/git-templates/hooks/prepare-commit-msg 
+chmod a+x ~/Documents/Repositories/codestyle/git-templates/hooks/prepare-commit-msg
 mkdir ~/Documents/Repositories/[REPOSITORY]/.git/hooks
 ln -s  ~/Documents/Repositories/codestyle/git-templates/hooks/prepare-commit-msg ~/Documents/Repositories/[REPOSITORY]/.git/hooks/prepare-commit-msg
 ```
@@ -47,7 +57,3 @@ or you can change your global config to use the template folder from codestyle:
 git config --global init.templatedir '~/Documents/Repositories/codestyle/git-templates'
 ```
 New repositories will have the hooks automatically. For existing repositories, you have to `git init` in the repository to add the templates. Please note that you will have to do this again if the hook-script changes.
-
-
-
-
