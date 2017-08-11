@@ -58,7 +58,7 @@ git config --global init.templatedir '~/Documents/Repositories/codestyle/git-tem
 ```
 New repositories will have the hooks automatically. For existing repositories, you have to `git init` in the repository to add the templates. Please note that you will have to do this again if the hook-script changes.
 
-# How to Write a Git Commit Message
+# How to write a git commit message
 
 1. Separate subject from body with a blank line
  - Summarise the change with a single short line 
