@@ -6,7 +6,7 @@
 # prepending commit message.
 
 if [ -z "$BRANCHES_TO_SKIP" ]; then
-  BRANCHES_TO_SKIP=(master stage develop test)
+  BRANCHES_TO_SKIP=(master main stage develop test)
 fi
 
 REMOTE_PUSH_URL=$(git remote get-url origin --push)
