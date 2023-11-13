@@ -19,7 +19,7 @@ BRANCH_IN_COMMIT=$(grep -c "\[$BRANCH_NAME\]" $1)
 
 TICKET_NUMBER=$(echo "$BRANCH_NAME" | grep -Eo '^[A-Z0-9]{1,10}-[0-9]+')
 
-if [ -n "$BRANCH_NAME" ] && [[ $REMOTE_PUSH_URL = *dreipol* ]] && ! [[ $BRANCH_EXCLUDED -eq 1 ]] && ! [[ $BRANCH_IN_COMMIT -ge 1 ]]; then
+if [ -n "$BRANCH_NAME" ] && ! [[ $BRANCH_EXCLUDED -eq 1 ]] && ! [[ $BRANCH_IN_COMMIT -ge 1 ]]; then
   if [ -n "$TICKET_NUMBER" ]; then
     sed -i.bak -e "1s/^/[$TICKET_NUMBER] /" $1
   else
